@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TODO</title>
+    <meta name="description" content="TODO APP">
+    <meta name="author" content="MrJuneJune">
+    <link rel="stylesheet" href="todo.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="buttoncontainer">
+        <button class="tablinks" onclick="openSchedule(event, 'daycontent')">Day</button><!--
+        --><button class="tablinks" onclick="openSchedule(event, 'weekcontent')">Week</button><!--
+        --><button class="tablinks" onclick="openSchedule(event, 'zzz')">Months</button>
+      </div>
+      <div id="daycontent" class="tabcontent">   
+        <div class="month">
+          <button class="arrow" onclick="date.moveDate(-1)">&larr;</button>
+          <div class="monthdatetext">
+            <p id="monthsdate"></p>
+            <p id="wordday"></p>
+          </div>
+          <button class="arrow" onclick="date.moveDate(1)">&rarr;</button>
+        </div>
+        <form id="todoForm" class="todo-form">
+            <input type="text" id="newTodo" name="newTodo" placeholder="Add a task..">
+        </form>
+        <div class=wrapping>
+          <ul id="todoList"></ul>
+        </div>
+      </div>
+      <div id="weekcontent" class="tabcontent">
+        spicy noodles
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
