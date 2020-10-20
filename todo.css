@@ -53,7 +53,8 @@
   list-style-type: none;
   margin-left: 19.3%;
   padding-left: 6px;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
   margin-bottom: 5px
 }
 
@@ -102,6 +103,15 @@
   margin-right: 30%;
   box-shadow: 0px 0px 5px 4px rgba(60,66,74, 0.5);
 }
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
 .tablinks.active {
   background-color: #3C424A;
 }
